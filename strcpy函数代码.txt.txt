@@ -17,7 +17,9 @@ char* strcpy(const char* src)
 		*ptr++ = ch;
 	*ptr++ = '\0';
 	return ptr;
+
 /**
 远程edit
 **/
+
 }
