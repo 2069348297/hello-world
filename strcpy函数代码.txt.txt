@@ -1,0 +1,20 @@
+#include <iostream>
+char* strcpy(const char* src)
+{
+
+	int len;
+	len = src.length;
+	char* ptr = NULL;
+
+	ptr = (char*)malloc(100 * sizeof(char));
+
+	if (NULL == ptr)
+	{
+		exit(1);
+	}
+	char ch;
+	while ((ch = *src++) != '\0')
+		*ptr++ = ch;
+	*ptr++ = '\0';
+	return ptr;
+}
